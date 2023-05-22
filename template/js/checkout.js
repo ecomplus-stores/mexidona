@@ -1,10 +1,8 @@
-import '#template/js/checkout'
-import './custom-js/checkout'
 import ecomCart from '@ecomplus/shopping-cart'
 var lessUnit = document.getElementById('lessUnit')
 var firstphrase = document.getElementById('lessSome')
 var lastphrase = document.getElementById('noMore')
-var lessQuantity = 300
+var lessQuantity = 200
 lessUnit.innerHTML = window.ecomUtils.formatMoney(lessQuantity, 'BRL', 'pt_br')
 ecomCart.on('change', ({ data }) => {
   var cartCalc = document.querySelectorAll('#cart')
