@@ -8,19 +8,19 @@
   },
   "bg_color": "#ffffff",
   "repository": "ecomplus-stores/mexidona",
-  "logo": "/img/uploads/mexidona_preto10.png",
+  "logo": "/img/uploads/logo.png",
   "name": "mexidona",
   "short_name": "Mexidona",
   "lang": "pt_br",
   "currency": "BRL",
   "mini_logo": "",
   "font_family": "_",
-  "favicon": "/img/uploads/mexidona_preto10.png",
+  "favicon": "/img/uploads/logo.png",
   "icons_font": "_",
   "country_code": "BR",
   "secondary_color": "#6269ae",
-  "icon": "/img/uploads/mexidona_preto10.png",
+  "icon": "/img/uploads/logo.png",
   "store_id": 51403,
   "description": "Estamos muito animados em anunciar a grande novidade da Bio Blend Foods: agora somos a Mexidona! O nome já diz tudo: refeições em poucos minutos, com praticidade e sabor incríveis. Durante todos esses anos, estivemos atentos aos feedbacks dos nossos queridos consumidores, parceiros, lojistas e distribuidores, e essa nova fase reflete todo o amor e cuidado que temos com cada um de vocês.",
-  "large_icon": "/img/uploads/mexidona_preto10.png"
+  "large_icon": "/img/uploads/logo.png"
 }
