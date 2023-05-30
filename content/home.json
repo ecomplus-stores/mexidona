@@ -3,6 +3,20 @@
   "meta_description": "",
   "sections": [
     {
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "full_width": true,
+      "slides": [
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/fraunces-1-.png",
+          "link": "/app/#/account/",
+          "mobile_img": "/img/uploads/bannersmobile.png"
+        }
+      ]
+    },
+    {
       "type": "dynamic-showcase",
       "load_more": true
     }
