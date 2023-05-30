@@ -13,8 +13,8 @@
     "app-confirmation": "chunk.fe10dc65b79e1ba09ca0.js",
     "app-order": "chunk.4bbfd17b0511b28fb95a.js",
     "checkout": [
-      "checkout.98d884ba9261ae12ca69.js",
-      "checkout.98d884ba9261ae12ca69.js.map"
+      "checkout.219db28eac0f2d4fec3c.js",
+      "checkout.219db28eac0f2d4fec3c.js.map"
     ],
     "storefront": [
       "storefront.e724fce3d1192a87d9bc.css",
