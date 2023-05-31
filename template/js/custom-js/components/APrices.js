@@ -40,6 +40,7 @@ import {
         type: Object,
         required: true
       },
+      isLogged: Boolean,
       isLiteral: Boolean,
       isBig: Boolean,
       isAmountTotal: Boolean,
@@ -96,6 +97,7 @@ import {
       },
 
       isLogged () {
+        window.loggedUser = ecomPassport.checkLogin()
         return ecomPassport.checkLogin()
       },
   
