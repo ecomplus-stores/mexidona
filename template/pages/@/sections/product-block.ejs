@@ -97,9 +97,6 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
             <div id="product-loading">
               <% if (_.state.available && _.state.visible && _.ecomUtils.inStock(_.state)) { %>
                 <div class="product__price prices prices--big">
-                  <strong class="prices__value">
-                    <%= _.ecomUtils.formatMoney(_.ecomUtils.price(_.state)) %>
-                  </strong>
                 </div>
               <% } %>
 
@@ -209,12 +206,7 @@ const productJsonLd = {
     '@type': 'Offer',
     url: `https://${_.settings.domain}/${_.state.slug}`,
     availability: `${(_.ecomUtils.inStock(_.state) ? 'In' : 'OutOf')}Stock`,
-    priceCurrency: _.settings.currency,
-    price: _.ecomUtils.price(_.state),
     itemCondition: `http://schema.org/${(_.state.condition === 'new' ? 'New' : 'Used')}Condition`,
-    priceValidUntil: _.ecomUtils.onPromotion(_.state) && _.state.price_effective_date && _.state.price_effective_date.end
-      ? _.state.price_effective_date.end.slice(0, 10)
-      : undefined,
     seller: {
       '@type': 'Organization',
       name: _.settings.name || _.store.name
