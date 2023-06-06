@@ -1,7 +1,7 @@
 {
   "domain": "mexidona.netlify.app",
   "currency_symbol": "R$",
-  "primary_color": "#ced759",
+  "primary_color": "#a59a29",
   "theme": {
     "bootswatch": "_",
     "custom": "_"
