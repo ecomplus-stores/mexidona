@@ -15,16 +15,22 @@ import {
   nickname as getNickname
 } from '@ecomplus/utils'
 
+import axios from 'axios'
+import { $ecomConfig } from '@ecomplus/utils'
 import ecomPassport from '@ecomplus/passport-client'
 import LoginBlock from '@ecomplus/storefront-components/src/LoginBlock.vue'
 import RecommendedItems from '@ecomplus/storefront-components/src/RecommendedItems.vue'
+import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
+import AccountForm from '@ecomplus/storefront-components/src/AccountForm.vue'
 
 export default {
   name: 'TheAccount',
 
   components: {
     LoginBlock,
-    RecommendedItems
+    RecommendedItems,
+    AAlert,
+    AccountForm
   },
 
   props: {
@@ -51,7 +57,9 @@ export default {
   data () {
     return {
       favoriteIds: [],
-      navTabs: []
+      navTabs: [],
+      customerEmail: this.customer.main_email || this.ecomPassport.getCustomer().main_email,
+      isAccountCreated: false
     }
   },
 
@@ -123,6 +131,13 @@ export default {
         this.ecomPassport.logout()
         this.$emit('logout')
       }
+    },
+
+    signup () {
+      const endpoint = `https://passport.e-com.plus/v1/${$ecomConfig.get('store_id')}/signup.json`
+      axios.post(endpoint, this.localCustomer).then(() => {
+        this.isAccountCreated = true
+      })
     }
   },
 
@@ -139,6 +154,12 @@ export default {
       },
       immediate: true,
       deep: true
+    },
+
+    customerEmail (email) {
+      if (email && email !== this.localCustomer.main_email) {
+        this.localCustomer.main_email = email
+      }
     }
   },
 
