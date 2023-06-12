@@ -30,11 +30,11 @@
   ],
   "payment_methods": {
     "pix": true,
-    "visa": true,
-    "mastercard": true,
-    "elo": true,
-    "amex": true,
-    "hipercard": true,
+    "visa": false,
+    "mastercard": false,
+    "elo": false,
+    "amex": false,
+    "hipercard": false,
     "boleto": true
   },
   "credits": ""
