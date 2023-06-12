@@ -1,6 +1,6 @@
 {
-  "meta_title": "",
-  "meta_description": "",
+  "meta_title": "Bio Blend agora é Mexidona",
+  "meta_description": "Leve mais praticidade e saúde para os seus clientes.",
   "sections": [
     {
       "type": "banner-slider",
@@ -13,6 +13,11 @@
           "img": "/img/uploads/fraunces-3-1-.png",
           "link": "/app/#/account/",
           "mobile_img": "/img/uploads/bannersmobile.png"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-carrosel-site-b2b-desktop-1200-300-px-.jpg"
         }
       ]
     },
