@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.f2bdbe9d3e5fc3414af7a9a513dc87ef.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.34737ef477e787b4ae96de8c888fb332.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.906db8d927c75b3db22531594cd0babb.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.9d68035bee3d9b8c194ab42207d6adf6.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.4a9f7d826007bd794001073638e2f7e3.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "mexidona",
+  "short_name": "Mexidona",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "A escolha certa para uma vida mais prática e saudável.",
+  "background_color": "#ffffff",
+  "theme_color": "#a59a29"
+}
